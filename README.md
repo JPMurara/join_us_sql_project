@@ -1,5 +1,5 @@
 # Join US - My SQL project
-![project](path here)
+![project](https://github.com/JPMurara/join_us_sql_project/blob/main/screenshots/screenshot.png?raw=true)
 
 Welcome to the Join US project! This project was developed during a SQL bootcamp, showcasing my skills in writing queries using MySQL.
 I have also studied other databases such as MS SQL Server, Postgres, and MongoDB.
