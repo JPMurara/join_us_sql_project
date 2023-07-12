@@ -1,0 +1,67 @@
+body {
+text-align: center;
+text-shadow: 0 .05em .1rem rgba(0,0,0,.5);
+font-family: "Roboto", sans-serif;
+color: rgb(66,69,86);
+height: 100%;
+background-image: url("http://i.imgur.com/BJP2Q1j.jpg");
+background-size: cover; /* fit the image to the backgroud of the page */
+font-weight: 100;
+}
+/* Regarding the font-weight, it is set in the body to potentially apply to all elements within the body by default. But, in browsers, the h1 can have a specific bold font weight style set directly on the h1 elements by default (set automatically by the browser), which would override the inherited styles from a parent element.
+
+So, when the h1 element has a different direct font-weight value specified by the browser, it will override the inherited font-weight value set in the body.
+
+Therefore, we define our own specific font-weight value directly on the h1 element to make sure it applies and overrides the default browser style for it. */
+.flex-container {
+display: flex;
+justify-content: center;
+flex-direction: column;
+height: 100%;
+}
+
+h1 {
+margin: 0;
+font-size: 500px;
+line-height: 400px;
+font-weight: 100;
+}
+
+p {
+margin: 0;
+font-size: 50px;
+}
+
+.form {
+    line-height: 1.5;
+    border: none;
+    border-bottom: 3px solid #ebebeb;
+    margin-top: 100px;
+    width: 700px;
+    font-size: 2.9em;
+    color: white;
+    padding: 5px 10px;
+    background: transparent; 
+}
+
+button {
+    line-height: 2.0;
+    border: 3px solid white;
+    font-size: 1.9em;
+    color: rgb(66, 69, 86);
+    padding: 5px 30px;
+    background: rgba(255, 255, 255, 1.0);
+    border-radius: 5px;
+    opacity: 0.8;
+}
+
+input[type=text]:focus { /*removes the focus effect when clicks/hover on it*/
+    outline: none;
+}
+
+::-webkit-input-placeholder { /*makes the placeholder text white*/
+    color: rgba(255, 255, 255, 0.8);
+}
+
+
+

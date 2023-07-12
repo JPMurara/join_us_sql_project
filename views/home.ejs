@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Joao's SQL Project</title>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;400&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="/style.css"> <!-- css file is avaiable to this file -->
+</head>
+
+<body>
+    <div class="flex-container">
+        <div class="container">
+        <h1>JOIN US</h1>
+        <p class="lead">Enter your email to join <strong><%=data%></strong> others on our waitlist.</p> <!-- data returns the value of the query/total_users -->
+        <form action="/register" method="POST"> <!-- post request allow us to send data with the request. The form automatically takes the data from the input and send it as a post request to 
+        the destination we tell the form to send to, in this case /register route -->
+            <input type="input" class="form" name="email" placeholder="Enter Your Email..."> <!-- name is the label. The data is sent by the form under the name email -->
+            <button>Join Now</button> <!-- submits the form -->
+        </form>
+        </div>
+        </div>
+</body>
+</html>
+
